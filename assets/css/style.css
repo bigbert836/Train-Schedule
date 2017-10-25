@@ -13,3 +13,20 @@ input,
 button{
 	margin: 5px;
 }
+
+#sectionTitle{
+	background-color: #50dbf8;
+}
+
+.panel{
+	background-color: #edecec;
+}
+
+form{
+	padding-bottom: 10px;
+}
+
+#submit{
+	display: block;
+	margin: 0 auto;
+}
