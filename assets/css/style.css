@@ -1,0 +1,15 @@
+h1,
+th,
+tr{
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+}
+
+h4,
+input,
+button{
+	margin: 5px;
+}

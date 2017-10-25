@@ -2,12 +2,14 @@
 <html>
 <head>
 	<title>Train Schedule</title>
+	<link rel="stylesheet" href="assets/css/reset.css"></style>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css"></style>
 </head>
-<body>
+<body class="container">
 	<header><h1>Train Schedule</h1></header>
 		<div class="panel panel-default" id="trainSchedule">
-  			<div class="panel-heading">Current Train Schedule</div>
+  			<div class="panel-heading"><h3>Current Train Schedule</h3></div>
   				<div class="panel-body">
   					<table class="table">
     					<thead>
@@ -25,15 +27,16 @@
   				</div>
 			</div>
 		</div>
-	<form id="submitTrain">
+	<form id="submitTrain" class="panel panel-default">
+		<div class="panel-heading"><h3>Add New Train</h3></div>
 		<h4>Train Name</h4>
-		<input type="text" id="name"><br>
+		<input type="text" size="35" id="name"><br>
 		<h4>Destination</h4>
-		<input type="text" id="destination"><br>
+		<input type="text" size="35" id="destination"><br>
 		<h4>First Train Time (HH:mm - Military Time)</h4>
-		<input type="text" id="time"><br>
+		<input type="text" size="35" id="time"><br>
 		<h4>Frequency (min)</h4>
-		<input type="number" id="frequency"><br><br>
+		<input type="number" size="35" id="frequency"><br><br>
 		<button id="submit">Submit</button>
 	</form>
 	<script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
