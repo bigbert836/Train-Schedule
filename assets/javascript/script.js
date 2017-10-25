@@ -17,6 +17,7 @@ var destination;
 var time;
 var frequency;
 
+// Run fucntion to push input values to database
 $("#submit").click(function(event){
 	event.preventDefault();
 	name = $("#name").val().trim();
@@ -32,6 +33,7 @@ $("#submit").click(function(event){
 			dateAdded: firebase.database.ServerValue.TIMESTAMP
 	});
 
+	//clear input boxes
 	$("#name").val("");
 	$("#destination").val("");
  	$("#time").val("");
@@ -68,6 +70,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     // Next Train
     nextArrival = moment().add(minutesAway, "minutes");
     
+  //update table  
   $("tbody").append("<tr><td>" + newName + "</td><td>" + newDestination + "</td><td>" +
   newFrequency + "</td><td>" + moment(nextArrival).format("hh:mm") + "</td><td>" + minutesAway + "</td>");
 
